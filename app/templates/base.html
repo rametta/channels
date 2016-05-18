@@ -1,0 +1,18 @@
+
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Django Chat App</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+		<link rel="stylesheet" href="{% static 'css/chat.css' %}"/>
+		<!--<link rel="stylesheet" href="{% static 'css/style.css' %}"/>-->
+	</head>
+	<body>
+		{% block content %}{% endblock content %}
+		{% block aftercontent %}{% endblock aftercontent %}
+	</body>
+</html>
